@@ -1,0 +1,17 @@
+.form-container {
+    background-color: rgba(21, 21, 21, 0.5);
+    padding: 1.5rem 2.5rem;
+    border-radius: .8rem;
+    max-width: 600px;
+    min-width: 500px;
+    margin: 0 auto;
+}
+
+    .form-container h1,
+    .form-container .button-center {
+        text-align: center;
+    }
+
+    .form-container .form-div {
+        margin-bottom: 1.5rem;
+    }
