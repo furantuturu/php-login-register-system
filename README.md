@@ -5,4 +5,4 @@
 
 Base Template: [Eventually](https://html5up.net/eventually)
 
-Navigation Bar:
+Navigation Bar: [Helios](https://html5up.net/helios)
