@@ -28,3 +28,16 @@ function vendorAutoloader() {
     }
 
 }
+
+function redirect($path) {
+
+    header("Location: {$path}");
+    die();
+
+}
+
+function old($key, $default = '') {
+
+    return Classes\Session::get('_old')[$key] ?? $default;
+
+}
