@@ -12,7 +12,7 @@
     <form action="/login" method="post">
         <div class="form-div">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Email Address" required>
+            <input type="email" id="email" name="email" value="<?= old('email') ?>" placeholder="Email Address" required>
         </div>
         <div class="form-div">
             <label for="password">Password</label>
