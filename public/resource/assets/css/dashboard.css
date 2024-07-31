@@ -1,0 +1,13 @@
+#tsparticles {
+    position: relative;
+    z-index: -1;
+}
+
+.dashboard-container {
+    text-align: center;
+}
+
+.logout,
+.logout:hover {
+    background: none;
+}
