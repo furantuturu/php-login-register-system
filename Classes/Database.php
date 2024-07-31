@@ -35,4 +35,9 @@ class Database
 
         return $this;
     }
+
+    public function find()
+    {
+        return $this->statement->fetch();
+    }
 }
