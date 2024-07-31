@@ -20,8 +20,8 @@ class App
         static::getContainer()->bind($key, $builder);
     }
 
-    public static function resolve($key, $builder)
+    public static function resolve($key)
     {
-        static::getContainer()->resolve($key);
+        return static::getContainer()->resolve($key);
     }
 }
