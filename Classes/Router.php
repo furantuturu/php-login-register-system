@@ -1,6 +1,7 @@
 <?php
 
 namespace Classes;
+use Classes\Middleware\Middleware;
 
 class Router
 {
@@ -27,6 +28,11 @@ class Router
         return $this->add($uri, $controller, 'POST');
     }
 
+    public function delete($uri, $controller)
+    {
+        return $this->add($uri, $controller, 'DELETE');
+    }
+
     public function only($key)
     {
         $this->routes[array_key_last($this->routes)]['middleware'] = $key;
@@ -39,6 +45,8 @@ class Router
         foreach ($this->routes as $route) {
             
             if ($route['uri'] === $uri && $route['method'] === strtoupper($method)) {
+
+                Middleware::resolve($route['middleware']);
 
                 return require basePath('controllers/' . $route['controller']);
 
