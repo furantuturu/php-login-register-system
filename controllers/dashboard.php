@@ -1,5 +1,7 @@
 <?php
+use Classes\Session;
 
 return view('dashboard.view.php', [
-    'title' => 'Dashboard'
+    'title' => 'Dashboard',
+    'user' => Session::get('user')
 ]);
