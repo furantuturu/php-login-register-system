@@ -10,15 +10,6 @@ vendorAutoloader();
 $dotenv = Dotenv\Dotenv::createImmutable(BASE_PATH);
 $dotenv->load();
 
-spl_autoload_register(function ($class) {
-
-    //* e.g Classes\Database becomes Classes/Database
-    $result = str_replace('\\', '/', $class);
-
-    require basePath("{$result}.php");
-
-});
-
 require basePath('bootstrap.php');
 
 $router = new Classes\Router;
