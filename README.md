@@ -1,7 +1,8 @@
 # Mini Project Series 13
 ## Login Register System
 
-**Run the site via PHP built-in web server**
+**Run the site via PHP built-in web server:**
+
 `php -S [localhost]:[port] -t public`
 
 **Template/s Used**
